@@ -1,3 +1,5 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+
+def index(request):
+    return HttpResponse("Django Tutorial by Wax30d<html><body><h1> Hello World Django tutorials Tour</body></html>")
